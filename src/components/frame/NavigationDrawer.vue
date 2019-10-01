@@ -1,0 +1,81 @@
+<template>
+  <!-- v-model="drawer" -->
+  <v-navigation-drawer :value="drawer" @input="$emit('input', $event)" app clipped>
+    <v-list dense>
+      <!-- Home nav item -->
+      <v-list-item @click="navTo('/')">
+        <v-list-item-action>
+          <v-icon>mdi-home</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>Home</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item @click="navTo('/playing')">
+        <v-list-item-action>
+          <v-icon>mdi-sword</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>Playing</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item @click="navTo('/building')">
+        <v-list-item-action>
+          <v-icon>mdi-wrench</v-icon>
+        </v-list-item-action>
+        <v-list-item-content>
+          <v-list-item-title>Building</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
+      <v-divider></v-divider>
+
+      <v-list-item
+        v-for="(nav_link, index) in builder_links"
+        :key="index"
+        @click="navTo(nav_link.route)"
+      >
+        <v-list-item-action />
+        <v-list-item-content>
+          <v-list-item-title>{{ nav_link.label }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+    </v-list>
+  </v-navigation-drawer>
+</template>
+
+  <script>
+export default {
+  name: "NavigationDrawer",
+  props: {
+    drawer: Boolean
+  },
+  data: () => ({
+    // drawer: true,
+    builder_links: [
+      {
+        label: "Factions",
+        route: "/building/factions"
+      },
+      {
+        label: "Room Checks",
+        route: "/building/roomchecks"
+      }
+    ]
+  }),
+  methods: {
+    navTo(route) {
+      if (route === this.$router.currentRoute.fullPath) {
+        return;
+      }
+      this.$router.push({ path: route });
+    }
+  }
+};
+</script>
