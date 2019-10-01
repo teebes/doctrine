@@ -1,7 +1,7 @@
 <template>
   <v-row justify="center">
     <v-col cols="10">
-      <div class="title text-center my-4 primary--text">
+      <div class="title text-center">
         <slot name="title"></slot>
       </div>
 
@@ -19,7 +19,15 @@ export default {
 </script>
 
 <style>
+.title {
+  margin: 32px 0;
+  text-align: center;
+}
 .subtitle-1 {
   color: #f5c983;
+}
+.subtitle-2 {
+  text-transform: uppercase;
+  font-weight: bold;
 }
 </style>

@@ -36,6 +36,21 @@ export default new Router({
       path: "/building/roomchecks",
       name: "building_room_checks",
       component: () => import("@/views/building/RoomCheck.vue")
-    }
+    },
+    {
+      path: "/building/quests",
+      name: "building_quests",
+      component: () => import("@/views/building/Quests.vue")
+    },
+    {
+      path: "/building/mobs/items",
+      name: "building_mob_items",
+      component: () => import("@/views/building/MobItems.vue")
+    },
+    {
+      path: "/building/mobs/reactions",
+      name: "building_mob_reactions",
+      component: () => import("@/views/building/MobReactions.vue")
+    }    
   ]
 });

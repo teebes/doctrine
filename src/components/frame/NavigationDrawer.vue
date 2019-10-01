@@ -60,12 +60,24 @@ export default {
     // drawer: true,
     builder_links: [
       {
+        label: "Mob Items",
+        route: "/building/mobs/items"
+      },
+      {
+        label: "Mob Reactions",
+        route: "/building/mobs/reactions"
+      },
+      {
         label: "Factions",
         route: "/building/factions"
       },
       {
         label: "Room Checks",
         route: "/building/roomchecks"
+      },
+      {
+        label: "Quests",
+        route: "/building/quests"
       }
     ]
   }),
