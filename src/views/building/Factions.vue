@@ -16,7 +16,7 @@
 
         <p>For example, you may build a world with an Illuminati or a Templars faction, where players have to gain a good reputation with them before being granted access to their secret areas.</p>
 
-        <p>Faction standing is gained or lost by completion certain quests. Another way to lose standing within a faction is to kill one of its members.</p>
+        <p>Faction standing is gained or lost by completiing certain quests. Another way to lose standing within a faction is to kill one of its members.</p>
 
         <p>A player character is considered as belonging to a faction if they have at least a standing of 100 with it. A mob is considered as belonging to a faction if they have at least 1 standing with the faction.</p>
 

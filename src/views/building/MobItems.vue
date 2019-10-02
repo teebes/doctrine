@@ -3,62 +3,66 @@
     <Article>
       <template v-slot:title>MOB ITEMS</template>
       <template v-slot:content>
-
         <!-- <p>Mobs are almost just like player characters, except they are controlled by the game. But they otherwise behave the same way: they exist within the boundaries of a room, and can execute almost every command that a player can. They can move, fight, pick up stuff. They even have access to some of the builder commands.</p> -->
 
-        <p>There are three ways to load items on to mob when they spawn: equipment profiles, random loads and mob inventory.</p>
-        
-        <div class='subtitle-1'>Equipment Profiles</div>
-        <p>Equipment profiles define what should go into each equipment slot of a mob. Each slot can be either an item template or a set of declarative attributes to define a random item to load in it.</p>
+        <p>Mobs can load with certain items in their inventory. They will equip the items that can they can, and the rest will go to their inventory, available via their corpse upon their death.</p>
 
-        <p>Example, a soldier could have a profile with:</p>
+        <p>There are two ways to load items on to mob when they spawn: random loads and mob inventory.</p>
 
-        <ul class='mb-4'>
-        <li>head slot, load 'a helmet' item template</li>
-        <li>body slot, load a random item that has a 50% chance to be imbued.</li>
-        </ul>
+        <div class="subtitle-1">Mob Inventory</div>
+        <p>This is to load items based on template that a builder has created. To load a templated item, search for the template in the 'Item Template' field of the 'LOAD ITEMS' section, specify its load chance and then how many copies of it to load.</p>
 
-        <p>Mobs can have multiple profiles, which stack according to their priority. </p>
+        <div class="subtitle-1">Random Loads</div>
 
-        <p>For example, an officer could have the above soldier's equipment profile, as well as its own profile, which defines:</p>
+        <p>Random loads are an easy way to add equipment to your world without designing any items.</p>
 
-        <ul class='mb-4'>
-        <li>body slot, 'an ornate breastplate' item template</li>
-        <li>weapon slot, 100% imbued 25% enchanted item</li>
-        </ul>
+        <p>When random loads are enabled, a mob will spawn with the specified number of items (if the chance to load is satisfied). The items will be of the mob's own level, and will be 'imbued', meaning it will provide a boost to the wearer's stats.</p>
 
-        <p>Assuming the officer's profile has a higher priority than the soldier's, the officer will load with a helmet, an ornate breastplate and a random weapon. His body slot will take precedence over the soldier's body slow.</p>
-        <div class='subtitle-1'>Random Loads</div>
-        <p>This is a much easier way to add random loads to a mob than equipment profiles, though less powerful.</p>
+        <p>To load random items, check the Loads Random Items checkbox. You be able to edit the random drop parameters.</p>
 
-        <p>Rather than having to specify how is slow is loaded, this declarative structure simply wants to know how many items to load, the % chance they will be enchanted / imbued, as well as an optional load specification (for example heavy armor only, or two-handers only, etc).</p>
+        <v-simple-table>
+          <template v-slot:default>
+            <thead>
+              <tr>
+                <th class="text-left">Field</th>
+                <th class="text-left">Definition</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Number of Items</td>
+                <td>How many random items to load</td>
+              </tr>
 
-        <p>If an item slot is not already occupied by something loaded by an equipment profile, it will be equipped. Otherwise it will still load, but in inventory.</p>
+              <tr>
+                <td>Load Specification</td>
+                <td>By default, any kind of equipment can be generated. But it's also possible to restrict what kind of equipment will load. Specicy a load specification to do that.</td>
+              </tr>
 
-        <p>Fields on a random load definition:</p>
-        <ul class='mb-4'>
-        <li>Number of items to load</li>
-        <li>Chance that are imbued</li>
-        <li>Chance they are enchanted</li>
-        <li>Load speficiation</li>
-        </ul>
-        <div class='subtitle-1'>Mob Inventory</div>
-        <p>This is to load specific templates into a mob's inventory. If they are equippable, they will be equipped, unless the slot is already occupied by something loaded by a profile or a random load.</p>
+              <tr>
+                <td>Chance to Load</td>
+                <td>Chance that the item has to load on the mob.</td>
+              </tr>
 
-
-
+              <tr>
+                <td>Chance Enchanted</td>
+                <td>Chance that the item has to be enchanted, which grants it 20% more stats than if it was imbued.</td>
+              </tr>
+            </tbody>
+          </template>
+        </v-simple-table>
       </template>
     </Article>
   </div>
 </template>
 
 <script>
-import Article from '@/components/Article.vue';
+import Article from "@/components/Article.vue";
 
 export default {
-  name: 'Mob Items',
-  components: {Article}
-}
+  name: "Mob Items",
+  components: { Article }
+};
 </script>
 
 <style>
