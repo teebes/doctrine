@@ -20,6 +20,11 @@ export default new Router({
       name: "playing",
       component: () => import("@/views/playing/Index.vue")
     },
+    {
+      path: "/playing/experience",
+      name: "experience",
+      component: () => import("@/views/playing/Experience.vue")
+    },
 
     // Building
     {
@@ -51,6 +56,6 @@ export default new Router({
       path: "/building/mobs/reactions",
       name: "building_mob_reactions",
       component: () => import("@/views/building/MobReactions.vue")
-    }    
+    }
   ]
 });

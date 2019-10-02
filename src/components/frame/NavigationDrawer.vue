@@ -23,6 +23,17 @@
         </v-list-item-content>
       </v-list-item>
 
+      <v-list-item
+        v-for="nav_link in playing_links"
+        :key="nav_link.route"
+        @click="navTo(nav_link.route)"
+      >
+        <v-list-item-action />
+        <v-list-item-content>
+          <v-list-item-title>{{ nav_link.label }}</v-list-item-title>
+        </v-list-item-content>
+      </v-list-item>
+
       <v-divider></v-divider>
 
       <v-list-item @click="navTo('/building')">
@@ -58,6 +69,12 @@ export default {
   },
   data: () => ({
     // drawer: true,
+    playing_links: [
+      {
+        label: "Experience",
+        route: "/playing/experience"
+      }
+    ],
     builder_links: [
       {
         label: "Mob Items",
