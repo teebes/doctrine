@@ -105,7 +105,7 @@ export default {
         },
         {
           level: 12,
-          experience: 550000,
+          experience: 55000,
           per_mob: 445
         },
         {
