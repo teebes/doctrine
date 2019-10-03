@@ -5,7 +5,7 @@
       <template v-slot:content>
         <!-- <p>Mobs are almost just like player characters, except they are controlled by the game. But they otherwise behave the same way: they exist within the boundaries of a room, and can execute almost every command that a player can. They can move, fight, pick up stuff. They even have access to some of the builder commands.</p> -->
 
-        <p>Mobs can load with certain items in their inventory. They will equip the items that can they can, and the rest will go to their inventory, available via their corpse upon their death.</p>
+        <p>Mobs can load with certain items in their inventory. They will equip the items that can they are able to equip, and the rest will go to their inventory, available via their corpse upon their death.</p>
 
         <p>There are two ways to load items on to mob when they spawn: random loads and mob inventory.</p>
 
