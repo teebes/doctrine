@@ -3,10 +3,10 @@
     <Article>
       <template v-slot:title>WORLD EDITOR</template>
       <template v-slot:content>
-        <p>Welcome to the world editor. You will find a list of relevant topics on the left.</p>
+        <p>Welcome to the world editor. You will find a list of relevant topics on the left, under the hamburger menu.</p>
 
         <p>
-          This documentation is a work in progress, but the repository is open source. If there are topics you feel knowledgable about and would like to contribute, we would gladly take the help:
+          This documentation is a work in progress, but the repository is open source. If there are topics you feel knowledgeable about and would like to contribute, we would gladly take the help:
           <a
             href="https://github.com/teebes/doctrine"
           >https://github.com/teebes/doctrine</a>.
@@ -14,7 +14,7 @@
 
         <div class="subtitle-1">Builder Characters</div>
 
-        <p>When you create a new world, it will come with one charater already defined, called 'Builder'. This Builder Character will have access to a number of additional commands that regular characters do not have access to. To view builder commands, type 'help' in game on a builder character and look at the bottom row.</p>
+        <p>When you create a new world, it will come with one character already defined, called 'Builder'. This Builder Character will have access to a number of additional commands that regular characters do not have access to. To view builder commands, type 'help' in game on a builder character and look at the bottom row.</p>
 
         <p>
           One builder command in particular is extremely important when working on a world:

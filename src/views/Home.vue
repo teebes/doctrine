@@ -6,14 +6,14 @@
 
         <p>Welcome to the documentation for Written Realms, a work in progress.</p>
 
-        <p>We are currently focusing on <router-link to="/building">documenting the world editor</router-link>, but will be adding gameplay documetation as soon as possible.</p>
+        <p>We are currently focusing on <router-link to="/building">documenting the world editor</router-link>, but will be adding gameplay documentation as soon as possible.</p>
 
         <p>
-          If you find gaps and would like to contribute, the repository for this codebase is open source at
+          If you find gaps and would like to contribute, the repository for this codebase is open source, at
           <a
             href="https://github.com/teebes/doctrine"
-          >https://github.com/teebes/doctrine</a>. Feel free to submit a PR!
-        </p>        
+          >https://github.com/teebes/doctrine</a>. Feel free to submit a pull request!
+        </p>
       </template>
     </Article>
   </div>

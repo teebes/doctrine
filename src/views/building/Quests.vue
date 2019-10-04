@@ -3,7 +3,7 @@
     <Article>
       <template v-slot:title>QUESTS</template>
       <template v-slot:content>
-        <p>Quests are tasks that mobs can assign players. They require the completion of objectives, and they can give rewards.</p>
+        <p>Quests are tasks that mobs can assign players. Quests require the completion of objectives, and they can give rewards.</p>
 
         <div class="subtitle-1">Active Quests</div>
 
@@ -45,7 +45,7 @@
         <p>It is therefore possible to make quests whose instructions are hidden until a player says the right thing, by unchecking 'Enquire Command is Available' and by defining at least one word in 'Enquire Triggers'.</p>
 
         <p>
-          <strong>Note:</strong> the commands in the 'Enquire Commands' field should be mobs commands that would work as issued by a mob. This means that almost always they should start with either 'say' or 'emote'.
+          <strong>Note:</strong> the commands in the 'Enquire Commands' field can be almost any command a player could use, as well as some builder commands like 'echo'. This means that almost always they should start with either 'say' or 'emote'.
         </p>
 
         <div class="subtitle-1">Complete</div>
@@ -56,12 +56,12 @@
 
         <p>The 'Complete Silently' option will complete the quest without indicating to the player that this was a quest completion. The player will not see the 'you complete the quest' message.</p>
 
-        <p>The 'Completion Action' field can define a command that can be used to complete a quest. For example if 'report' is defined as the completion action, a player will be able to complete the quest by typing 'report'. Multiple completion actions can be supplied separated by an 'or' keyword. For example "cut web or cut webbing or cut silk".</p>
+        <p>The 'Completion Action' field can define a command that can be used to complete a quest. For example if 'report' is defined as the completion action, a player will be able to complete the quest by typing 'report'. Multiple completion actions can be supplied, separated by an 'or' keyword. For example "cut web or cut webbing or cut silk".</p>
 
         <p>Unsetting the 'Completion Command is Available' checkbox will remove 'complete' from a valid command to complete this quest. When doing so, only completion triggers or completion actions can be used to complete the quest.</p>
 
         <p>
-          <strong>Note:</strong> the commands in the 'Completion Commands' field should be mobs commands that would work as issued by a mob. This means that almost always they should start with either 'say' or 'emote'.
+          <strong>Note:</strong> the commands in the 'Enquire Commands' field can be almost any command a player could use, as well as some builder commands like 'echo'. This means that almost always they should start with either 'say' or 'emote'.
         </p>
         <div class="subtitle-1">Objectives</div>
         <p>There are two kinds of objectives:</p>
