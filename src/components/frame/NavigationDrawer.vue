@@ -77,6 +77,10 @@ export default {
     ],
     builder_links: [
       {
+        label: "Mobs",
+        route: "/building/mobs"
+      },
+      {
         label: "Mob Items",
         route: "/building/mobs/items"
       },

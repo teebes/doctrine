@@ -30,4 +30,7 @@ export default {
   text-transform: uppercase;
   font-weight: bold;
 }
+ul {
+  margin-bottom: 16px;
+}
 </style>

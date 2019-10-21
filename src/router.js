@@ -48,6 +48,11 @@ export default new Router({
       component: () => import("@/views/building/Quests.vue")
     },
     {
+      path: "/building/mobs",
+      name: "building_mobs",
+      component: () => import("@/views/building/Mobs.vue")
+    },
+    {
       path: "/building/mobs/items",
       name: "building_mob_items",
       component: () => import("@/views/building/MobItems.vue")
