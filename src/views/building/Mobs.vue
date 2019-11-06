@@ -57,7 +57,7 @@
 
         <div class="subtitle-1 mt-4">Stats</div>
 
-        <p>The level of a mob determines:</p>
+        <p>The level of a mob (max 20) determines:</p>
 
         <ul>
           <li>How much armor it has: Mobs get 10.25 * L armor, and warrior mobs get triple that amount.</li>
@@ -67,6 +67,21 @@
         </ul>
 
         <p>If a mob is 'elite', its health will increase 6 fold.</p>
+
+        <div class='subtitle-1 mt-4'>Builder Commands</div>
+
+        <p>Mobs are able to execute some of the commands that a builder is able to do:</p>
+
+        <ul>
+          <li>echo</li>
+          <li>force</li>
+          <li>setattr</li>
+          <li>winvisible</li>
+          <li>load</li>
+          <li>purge</li>
+          <li>jump</li>
+          <li>transfer</li>
+        </ul>
 
       </template>
     </Article>

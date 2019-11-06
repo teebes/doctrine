@@ -61,6 +61,11 @@ export default new Router({
       path: "/building/mobs/reactions",
       name: "building_mob_reactions",
       component: () => import("@/views/building/MobReactions.vue")
+    },
+    {
+      path: "/building/items",
+      name: "building_items",
+      component: () => import("@/views/building/Items.vue")
     }
   ]
 });
