@@ -21,6 +21,16 @@ export default new Router({
       component: () => import("@/views/playing/Index.vue")
     },
     {
+      path: "/playing/items",
+      name: "items",
+      component: () => import("@/views/playing/Items.vue")
+    },
+    {
+      path: "/playing/quests",
+      name: "quests",
+      component: () => import("@/views/playing/Quests.vue")
+    },
+    {
       path: "/playing/experience",
       name: "experience",
       component: () => import("@/views/playing/Experience.vue")

@@ -22,7 +22,7 @@
     </v-content>
 
     <v-footer app>
-      <span>&copy; 2019 Morel Software, LLC</span>
+      <span>&copy; 2020 Morel Software, LLC</span>
     </v-footer>
   </v-app>
 </template>

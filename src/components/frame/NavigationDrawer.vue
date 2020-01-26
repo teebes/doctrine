@@ -85,6 +85,14 @@ export default {
     // drawer: true,
     playing_links: [
       {
+        label: "Items",
+        route: "/playing/items"
+      },
+      {
+        label: "Quests",
+        route: "/playing/quests"
+      },
+      {
         label: "Experience",
         route: "/playing/experience"
       }
