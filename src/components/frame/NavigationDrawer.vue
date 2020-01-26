@@ -1,6 +1,11 @@
 <template>
   <!-- v-model="drawer" -->
-  <v-navigation-drawer :value="drawer" @input="$emit('input', $event)" app clipped>
+  <v-navigation-drawer
+    :value="drawer"
+    @input="$emit('input', $event)"
+    app
+    clipped
+  >
     <v-list dense>
       <!-- Home nav item -->
       <v-list-item @click="navTo('/')">
@@ -14,54 +19,63 @@
 
       <v-divider></v-divider>
 
-      <v-list-item @click="navTo('/playing')">
-        <v-list-item-action>
-          <v-icon>mdi-sword</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
+      <!-- Playing Links -->
+
+      <v-list-group prepend-icon="mdi-sword">
+        <template v-slot:activator>
           <v-list-item-title>Playing</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
-
-      <v-list-item
-        v-for="nav_link in playing_links"
-        :key="nav_link.route"
-        @click="navTo(nav_link.route)"
-      >
-        <v-list-item-action />
-        <v-list-item-content>
-          <v-list-item-title>{{ nav_link.label }}</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
+        </template>
+        <v-list-item @click="navTo('/playing')">
+          <v-list-item-action />
+          <v-list-item-content>
+            <v-list-item-title>Playing - Home</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+        <v-list-item
+          v-for="nav_link in playing_links"
+          :key="nav_link.route"
+          @click="navTo(nav_link.route)"
+        >
+          <v-list-item-action />
+          <v-list-item-content>
+            <v-list-item-title>{{ nav_link.label }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-group>
 
       <v-divider></v-divider>
 
-      <v-list-item @click="navTo('/building')">
-        <v-list-item-action>
-          <v-icon>mdi-wrench</v-icon>
-        </v-list-item-action>
-        <v-list-item-content>
+      <!-- Building Links -->
+
+      <v-list-group prepend-icon="mdi-wrench">
+        <template v-slot:activator>
           <v-list-item-title>Building</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
+        </template>
+        <v-list-item @click="navTo('/building')">
+          <v-list-item-action />
+          <v-list-item-content>
+            <v-list-item-title>Building - Home</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+
+        <v-list-item
+          v-for="(nav_link, index) in builder_links"
+          :key="index"
+          @click="navTo(nav_link.route)"
+        >
+          <v-list-item-action />
+          <v-list-item-content>
+            <v-list-item-title>{{ nav_link.label }}</v-list-item-title>
+          </v-list-item-content>
+        </v-list-item>
+      </v-list-group>
 
       <v-divider></v-divider>
-
-      <v-list-item
-        v-for="(nav_link, index) in builder_links"
-        :key="index"
-        @click="navTo(nav_link.route)"
-      >
-        <v-list-item-action />
-        <v-list-item-content>
-          <v-list-item-title>{{ nav_link.label }}</v-list-item-title>
-        </v-list-item-content>
-      </v-list-item>
     </v-list>
   </v-navigation-drawer>
 </template>
 
-  <script>
+<script>
 export default {
   name: "NavigationDrawer",
   props: {
