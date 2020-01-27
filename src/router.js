@@ -76,6 +76,12 @@ export default new Router({
       path: "/building/items",
       name: "building_items",
       component: () => import("@/views/building/Items.vue")
+    },
+    //FAQ
+    {
+      path: "/FAQ",
+      name: "FAQ",
+      component: () => import("@/views/FAQ.vue")
     }
   ]
 });
