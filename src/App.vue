@@ -12,6 +12,9 @@
         <a target="_blank" href="https://discordapp.com/invite/a3u82tR"
           ><v-icon class="pr-4">mdi-discord</v-icon></a
         >
+        <a target="_blank" href="https://www.patreon.com/writtenrealms"
+          ><v-icon class="pr-4">mdi-patreon</v-icon></a
+        >
       </div>
     </v-app-bar>
 
@@ -22,7 +25,7 @@
     </v-content>
 
     <v-footer app>
-      <span>&copy; 2019 Morel Software, LLC</span>
+      <span>&copy; 2020 Morel Software, LLC</span>
     </v-footer>
   </v-app>
 </template>
