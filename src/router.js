@@ -35,6 +35,11 @@ export default new Router({
       name: "experience",
       component: () => import("@/views/playing/Experience.vue")
     },
+    {
+      path: "/playing/classes",
+      name: "classes",
+      component: () => import("@/views/playing/Classes.vue")
+    },
 
     // Building
     {

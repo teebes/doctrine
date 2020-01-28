@@ -1,11 +1,6 @@
 <template>
   <!-- v-model="drawer" -->
-  <v-navigation-drawer
-    :value="drawer"
-    @input="$emit('input', $event)"
-    app
-    clipped
-  >
+  <v-navigation-drawer :value="drawer" @input="$emit('input', $event)" app clipped>
     <v-list dense>
       <!-- Home nav item -->
       <v-list-item @click="navTo('/')">
@@ -110,6 +105,10 @@ export default {
       {
         label: "Experience",
         route: "/playing/experience"
+      },
+      {
+        label: "Classes",
+        route: "/playing/classes"
       }
     ],
     builder_links: [
