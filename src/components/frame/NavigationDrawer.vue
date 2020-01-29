@@ -1,11 +1,6 @@
 <template>
   <!-- v-model="drawer" -->
-  <v-navigation-drawer
-    :value="drawer"
-    @input="$emit('input', $event)"
-    app
-    clipped
-  >
+  <v-navigation-drawer :value="drawer" @input="$emit('input', $event)" app clipped>
     <v-list dense>
       <!-- Home nav item -->
       <v-list-item @click="navTo('/')">
@@ -24,7 +19,7 @@
       <!-- <v-list-group prepend-icon="mdi-sword"> -->
       <!-- <template v-slot:activator>
         <v-list-item-title>Playing</v-list-item-title>
-      </template> -->
+      </template>-->
       <v-list-item @click="navTo('/playing')">
         <v-icon>mdi-sword</v-icon>
         <v-list-item-action />
@@ -52,7 +47,7 @@
       <!-- <v-list-group prepend-icon="mdi-wrench"> -->
       <!-- <template v-slot:activator>
         <v-list-item-title>Building</v-list-item-title>
-      </template> -->
+      </template>-->
       <v-list-item @click="navTo('/building')">
         <v-icon>mdi-wrench</v-icon>
         <v-list-item-action />
@@ -99,6 +94,14 @@ export default {
     // drawer: true,
     isActive: false,
     playing_links: [
+      {
+        label: "Formulas",
+        route: "/playing/formulas"
+      },
+      {
+        label: "Classes",
+        route: "/playing/classes"
+      },
       {
         label: "Items",
         route: "/playing/items"

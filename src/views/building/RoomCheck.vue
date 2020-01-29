@@ -146,7 +146,4 @@ export default {
 </script>
 
 <style scoped>
-.subtitle-2 {
-  margin: 32px 0 16px 0;
-}
 </style>
