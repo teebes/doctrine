@@ -21,6 +21,16 @@ export default new Router({
       component: () => import("@/views/playing/Index.vue")
     },
     {
+      path: "/playing/formulas",
+      name: "formulas",
+      component: () => import("@/views/playing/Formulas.vue")
+    },
+    {
+      path: "/playing/classes",
+      name: "classes",
+      component: () => import("@/views/playing/Classes.vue")
+    },
+    {
       path: "/playing/items",
       name: "items",
       component: () => import("@/views/playing/Items.vue")
@@ -34,11 +44,6 @@ export default new Router({
       path: "/playing/experience",
       name: "experience",
       component: () => import("@/views/playing/Experience.vue")
-    },
-    {
-      path: "/playing/classes",
-      name: "classes",
-      component: () => import("@/views/playing/Classes.vue")
     },
 
     // Building
