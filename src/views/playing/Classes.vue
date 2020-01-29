@@ -37,61 +37,63 @@
             </template>
           </div>
 
-          <div class="subtitle-2">Core Skills</div>
+          <template v-if="skills_data">
+            <div class="subtitle-2">Core Skills</div>
 
-          <v-simple-table>
-            <template v-slot:default>
-              <thead>
-                <tr>
-                  <th>Level</th>
-                  <th>Skill</th>
-                  <th>Format</th>
-                  <th>Definition</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="skill_data in skills_data[archetype].core" :key="skill_data.code">
-                  <td>{{ skill_data.level }}</td>
-                  <td class="text-no-wrap">{{ skill_data.name }}</td>
-                  <td class="text-no-wrap">
-                    <div
-                      v-for="(line, index) in skill_data.format.split('|')"
-                      :key="index"
-                    >{{ line }}</div>
-                  </td>
-                  <td>{{ skill_data.description }}</td>
-                </tr>
-              </tbody>
-            </template>
-          </v-simple-table>
+            <v-simple-table>
+              <template v-slot:default>
+                <thead>
+                  <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Format</th>
+                    <th>Definition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="skill_data in skills_data[archetype].core" :key="skill_data.code">
+                    <td>{{ skill_data.level }}</td>
+                    <td class="text-no-wrap">{{ skill_data.name }}</td>
+                    <td class="text-no-wrap">
+                      <div
+                        v-for="(line, index) in skill_data.format.split('|')"
+                        :key="index"
+                      >{{ line }}</div>
+                    </td>
+                    <td>{{ skill_data.description }}</td>
+                  </tr>
+                </tbody>
+              </template>
+            </v-simple-table>
 
-          <div class="subtitle-2 mt-6">Flex Skills</div>
+            <div class="subtitle-2 mt-6">Flex Skills</div>
 
-          <v-simple-table>
-            <template v-slot:default>
-              <thead>
-                <tr>
-                  <th>Level</th>
-                  <th>Skill</th>
-                  <th>Format</th>
-                  <th>Definition</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="skill_data in skills_data[archetype].flex" :key="skill_data.code">
-                  <td>{{ skill_data.level }}</td>
-                  <td class="text-no-wrap">{{ skill_data.name }}</td>
-                  <td class="text-no-wrap">
-                    <div
-                      v-for="(line, index) in skill_data.format.split('|')"
-                      :key="index"
-                    >{{ line }}</div>
-                  </td>
-                  <td>{{ skill_data.description }}</td>
-                </tr>
-              </tbody>
-            </template>
-          </v-simple-table>
+            <v-simple-table>
+              <template v-slot:default>
+                <thead>
+                  <tr>
+                    <th>Level</th>
+                    <th>Skill</th>
+                    <th>Format</th>
+                    <th>Definition</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="skill_data in skills_data[archetype].flex" :key="skill_data.code">
+                    <td>{{ skill_data.level }}</td>
+                    <td class="text-no-wrap">{{ skill_data.name }}</td>
+                    <td class="text-no-wrap">
+                      <div
+                        v-for="(line, index) in skill_data.format.split('|')"
+                        :key="index"
+                      >{{ line }}</div>
+                    </td>
+                    <td>{{ skill_data.description }}</td>
+                  </tr>
+                </tbody>
+              </template>
+            </v-simple-table>
+          </template>
         </div>
       </template>
     </Article>
