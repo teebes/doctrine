@@ -42,10 +42,6 @@
         <router-view></router-view>
       </v-container>
     </v-content>
-
-    <v-footer app>
-      <span>&copy; 2020 Morel Software, LLC</span>
-    </v-footer>
   </v-app>
 </template>
 
