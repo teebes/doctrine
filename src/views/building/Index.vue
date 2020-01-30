@@ -3,14 +3,7 @@
     <Article>
       <template v-slot:title>WORLD EDITOR</template>
       <template v-slot:content>
-        <p>Welcome to the world editor. You will find a list of relevant topics on the left, under the hamburger menu.</p>
-
-        <p>
-          This documentation is a work in progress, but the repository is open source. If there are topics you feel knowledgeable about and would like to contribute, we would gladly take the help:
-          <a
-            href="https://github.com/teebes/doctrine"
-          >https://github.com/teebes/doctrine</a>.
-        </p>
+        <p>Written Realms lets you create your own text-based worlds. You don't need to know how to program, or to download anything. All of the world editing is done right in the browser, and it even works great on mobile.</p>
 
         <div class="subtitle-1">Builder Characters</div>
 
@@ -18,12 +11,16 @@
 
         <p>
           One builder command in particular is extremely important when working on a world:
-          <strong
-            class="primary--text"
-          >reset</strong>. This will restart the character to the beginning of the world, as if they were stepping into it in the shoes of a new user. You will use this command often when starting out to reset values on certain things.
+          <kbd>reset</kbd>. This will restart the character to the beginning of the world, as if they were stepping into it in the shoes of a new user. You will use this command often when starting out to reset values on certain things.
         </p>
 
-        <p>You are encouraged to read each help entry for builder commands in-game, especially: load, purge, regen, and force.</p>
+        <p>
+          You are encouraged to read each help entry for builder commands in-game, especially:
+          <kbd>load</kbd>,
+          <kbd>purge</kbd>,
+          <kbd>regen</kbd>, and
+          <kbd>force</kbd>.
+        </p>
       </template>
     </Article>
   </div>

@@ -58,7 +58,7 @@
 import Article from "@/components/Article.vue";
 
 export default {
-  name: "Mob Items",
+  name: "MobItems",
   components: { Article }
 };
 </script>

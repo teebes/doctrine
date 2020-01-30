@@ -33,7 +33,7 @@
 import Article from "@/components/Article.vue";
 
 export default {
-  name: "Mob Reactions",
+  name: "MobReactions",
   components: { Article }
 };
 </script>
