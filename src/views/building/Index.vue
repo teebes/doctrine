@@ -5,6 +5,8 @@
       <template v-slot:content>
         <p>Written Realms lets you create your own text-based worlds. You don't need to know how to program, or to download anything. All of the world editing is done right in the browser, and it even works great on mobile.</p>
 
+        <iframe class='mx-auto d-block my-12' width="560" height="315" src="https://www.youtube.com/embed/Y545oKK_heg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        
+
         <div class="subtitle-1">Builder Characters</div>
 
         <p>When you create a new world, it will come with one character already defined, called 'Builder'. This Builder Character will have access to a number of additional commands that regular characters do not have access to. To view builder commands, type 'help' in game on a builder character and look at the bottom row.</p>
