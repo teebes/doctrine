@@ -1,6 +1,6 @@
 <template>
   <v-app id="inspire" style="background: #191a1c">
-    <NavigationDrawer :drawer="drawer" @input="drawer = $event" mini-variant :clipped="true" />
+    <NavigationDrawer :drawer="drawer" @input="drawer = $event" clipped/>
 
     <v-app-bar app clipped-left class="flex" color="#131217" height="80">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
@@ -57,7 +57,7 @@ export default {
   //   source: String,
   // },
   data: () => ({
-    drawer: true
+    drawer: null
   }),
   created() {
     this.$vuetify.theme.dark = true;
