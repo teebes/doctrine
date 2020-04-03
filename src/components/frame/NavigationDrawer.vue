@@ -125,6 +125,10 @@ export default {
         route: "/building/mobs/reactions"
       },
       {
+        label: "Door",
+        route: "/building/doors"
+      },
+      {
         label: "Factions",
         route: "/building/factions"
       },

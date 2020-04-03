@@ -83,6 +83,11 @@ export default new Router({
       component: () => import("@/views/building/MobReactions.vue")
     },
     {
+      path: "/building/doors",
+      name: "doors",
+      component: () => import("@/views/building/Doors.vue")
+    },
+    {
       path: "/building/items",
       name: "building_items",
       component: () => import("@/views/building/Items.vue")

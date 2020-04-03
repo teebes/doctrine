@@ -84,7 +84,7 @@
             </tbody>
           </template>
         </v-simple-table>
-
+  
         <div class="subtitle-1 mt-4">Stats</div>
 
         <p>The level of a mob (max 20) determines:</p>
@@ -125,6 +125,11 @@
           <li>jump</li>
           <li>transfer</li>
         </ul>
+
+        <div class="subtitle-1 mt-4">Mob Damage</div>
+
+        <p>Like players, a mob's physical damage is determined by its weapon and ap. If the mob is not wielding a weapon, weapon damage is L(mob level) / 2 (refer to the <router-link to="/playing/formulas">formulas page</router-link> for more information on L).</p>
+
       </template>
     </Article>
   </div>
