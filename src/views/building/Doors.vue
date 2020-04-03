@@ -3,7 +3,7 @@
     <Article>
       <template v-slot:title>DOORS</template>
       <template v-slot:content>
-        <p>Doors can be created between two-rooms, or in the case of one-way exits from one room to the next.</p>
+        <p>Doors can be created between two rooms, or in the case of one-way exits from one room to the next.</p>
 
         <p>A door can be in three states: open, closed or locked. If it is locked, a key is required to open it. It is possible to define a locked door without a key however, in case of which a room action is required to open it. This can be useful to define mechanisms such as a 'pull lever to unlock door' situation.</p>
 
