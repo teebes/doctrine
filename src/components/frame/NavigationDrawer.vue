@@ -125,7 +125,7 @@ export default {
         route: "/building/mobs/reactions"
       },
       {
-        label: "Door",
+        label: "Doors",
         route: "/building/doors"
       },
       {
