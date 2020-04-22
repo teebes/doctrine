@@ -137,8 +137,16 @@ export default {
         route: "/building/roomchecks"
       },
       {
+        label: "Room Actions",
+        route: "/building/roomactions"
+      },
+      {
         label: "Quests",
         route: "/building/quests"
+      },
+      {
+        label: "Conditions",
+        route: "/building/conditions"
       }
     ]
   }),
