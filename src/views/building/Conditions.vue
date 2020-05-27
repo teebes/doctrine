@@ -97,6 +97,22 @@
                   Example - Player must have 100 templar standing: <code>standing_above templar 100</code>
                 </td>
               </tr>
+
+              <tr>
+                <td>item_in_eq</td>
+                <td>template_id</td>
+                <td>
+                  Return true if the actor is wearing an item of the specified <code>template_id</code>. Example - Player must have item from template ID 1 equipped: <code>item_in_eq 1</code>
+                </td>
+              </tr>              
+
+              <tr>
+                <td>health_below</td>
+                <td>percentage</td>
+                <td>
+                  Return true if the actor's health is less than the specified percentage, compared to their max health. Example - Player must be below 50% health: <code>health_below 50</code>
+                </td>
+              </tr>                            
             </tbody>
           </template>
         </v-simple-table>

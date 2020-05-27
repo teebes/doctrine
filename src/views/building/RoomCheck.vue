@@ -34,6 +34,11 @@
               </tr>
 
               <tr>
+                <td>conditions</td>
+                <td>The conditions that, if true, will prevent the action from taking place. For more information on conditions, refer to the <router-link to="/building/conditions">conditions page</router-link>.</td>
+              </tr>
+
+              <!-- <tr>
                 <td>check</td>
                 <td>
                   Which check to perform.
@@ -57,7 +62,7 @@
               <tr>
                 <td>argument2</td>
                 <td>Parameter depending on the type of check</td>
-              </tr>
+              </tr> -->
 
               <tr>
                 <td>failure_msg</td>
@@ -73,30 +78,27 @@
 
         <p>
           prevent: entry
-          <br />check: faction_below
+          <br />condition: not faction_above mountaineer 100
           <br />argument: mountaineer
-          <br />argument2: 100
           <br />failure_msg: Entry is reserved to members of the Mountaineers.
         </p>
 
-        <div class="subtitle-1">Prevent going east when a mob is present</div>
+        <div class="subtitle-1">Prevent going east when a mob spawned from mob template ID 1 is present</div>
 
         <p>
           prevent: exit
-          <br />check: mob_is_present
-          <br />argument: mob_template_id
+          <br />condition: mob_in_room 1
           <br />direction: east
           <br />failure_msg: A soldier blocks the way east.
         </p>
 
         <div
           class="subtitle-1"
-        >Prevent from entering room unless wearying a specific piece of equipment</div>
+        >Prevent from entering room unless wearing an item spawned from item template ID 1 (which could be a cloak, or a bandana)</div>
 
         <p>
           prevent: entry
-          <br />check: not_equipped
-          <br />argument: equipment_template_id (for example a cloak or a bandana)
+          <br />condition: not item_in_eq 1
           <br />failure_msg: You are not welcome here.
         </p>
 
@@ -104,19 +106,17 @@
 
         <p>
           prevent: exit
-          <br />check: health_below
-          <br />argument: 100
+          <br />condition: health_below 100
           <br />failure_msg: You cannot leave until you are fully rested.
         </p>
 
         <p>Note: adding ‘direction: east’ here would allow a west connection to be created to another part of the recovering area.</p>
 
-        <div class="subtitle-1">Must carry key / torch before entering a room</div>
+        <div class="subtitle-1">Must carry key / torch (based on template ID 1) before entering a room</div>
 
         <p>
           prevent: entry
-          <br />check: not_in_inv
-          <br />argument: key template id
+          <br />condition: not item_in_inv 1 1
         </p>
 
         <p>Note that for a torch type situation, it may make sense to have each of the rooms in the ‘dark’ section prevent entry, and for the room at the edges of the dark zone prevent exit if not carried as well, unless there is a clear established way for the player to get another torch outside of it. Otherwise, the player could drop the torch in the last dark room and exit, not ever being able to re-enter it.</p>
