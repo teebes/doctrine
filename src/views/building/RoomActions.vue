@@ -106,6 +106,14 @@
                   </td>
                 </tr>                
                 <tr>
+                  <td>force</td>
+                  <td>keyword, command</td>
+                  <td>
+                    Forces the mob that matches the provided <code>keyword</code> to perform the specified <code>command</code>.
+                    Example - force a soldier to say hello: <code>force soldier say hello</code>
+                  </td>
+                </tr>                
+                <tr>
                   <td>/open</td>
                   <td>direction</td>
                   <td>
