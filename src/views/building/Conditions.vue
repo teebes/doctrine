@@ -3,7 +3,7 @@
     <Article>
       <template v-slot:title>CONDITIONS</template>
       <template v-slot:content>
-        <p>Conditions are logical expressions that can be applied to Room Actions. Each condition consists of a condition name followed by one or more arguments.</p>
+        <p>Conditions are logical expressions that can be applied to Room Actions and Room Checks. Each condition consists of a condition name followed by one or more arguments.</p>
 
         <p>Conditions are evaluated against the actor that is triggering the action gated by the condition. In the case of a Room Action, it is evaluating the player that executed the action.</p>
 
