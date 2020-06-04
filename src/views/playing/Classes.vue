@@ -7,8 +7,15 @@
           class="mb-8"
         >There are four playable classes: warrior, mage, cleric, and assassin. Each class has access at any given time to 5 core skills and 3 flex skills. The 3 flex skills are learned from a larger pool of available skills.</div>
 
+      <div class='my-4'>
+        <a @click="$vuetify.goTo('#warrior')">Warrior</a><br/> 
+        <a @click="$vuetify.goTo('#mage')">Mage</a><br/> 
+        <a @click="$vuetify.goTo('#assassin')">Assassin</a><br/> 
+        <a @click="$vuetify.goTo('#cleric')">Cleric</a><br/> 
+      </div>
+
         <div v-for="(archetype, index) in archetypes" :key="index" class="mb-8">
-          <div class="subtitle-1">{{ archetype.toUpperCase() }}S</div>
+          <a :id="archetype" class="subtitle-1">{{ archetype.toUpperCase() }}S</a>
 
           <div class="class-description">
             <template v-if="archetype === 'warrior'">
