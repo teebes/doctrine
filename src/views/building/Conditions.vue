@@ -72,6 +72,15 @@
               </tr>
 
               <tr>
+                <td>player_in_room</td>
+                <td></td>
+                <td>
+                  Return true if player is in the room.<br>
+                  Example - Player is in room: <code>player_in_room</code>
+                </td>
+              </tr>              
+
+              <tr>
                 <td>quest_complete</td>
                 <td>quest_id</td>
                 <td>
