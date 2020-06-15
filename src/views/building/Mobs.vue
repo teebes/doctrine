@@ -112,18 +112,30 @@
 
         <p>
           Mobs are able to execute some of the commands that a builder is able
-          to do:
+          to do, as well as a few additional ones:
         </p>
 
         <ul>
+          <li>despawn</li>
           <li>echo</li>
+          <li>gecho</li>
+          <li>zecho</li>
           <li>force</li>
           <li>setattr</li>
           <li>winvisible</li>
           <li>load</li>
           <li>purge</li>
+          <li>pass</li>
+          <li>regen</li>
+          <li>send</li>
+          <li>sendexcept</li>
+          <li>setattr</li>
           <li>jump</li>
           <li>transfer</li>
+          <li>regen</li>
+          <li>/open</li>
+          <li>/close</li>
+          <li>/lock</li>
         </ul>
 
         <div class="subtitle-1 mt-4">Mob Damage</div>
