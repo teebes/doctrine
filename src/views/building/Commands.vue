@@ -10,10 +10,10 @@
 
         <code class='mb-6'>
 say hello there!
-say make yourself comforatable.
+say make yourself comfortable.
 </code>
 
-        <p>Each line will be executed with a 3 second interval. First the mob will say 'hello there', and 3 seconds later 'make yourself comfortable.</p>
+        <p>Each line will be executed with a 3 second interval. First the mob will say 'hello there', and 3 seconds later 'make yourself comfortable.'</p>
 
         <p>To execute multiple commands simultanously, place them on the same line and seperate them by a semicolon, like so:</p>
 
@@ -22,9 +22,9 @@ say make yourself comforatable.
         <p>Both of these commands will be executed by the game engine as close to each other as possible.</p>
 
         <div class="subtitle-1">Command Substitutions</div>
-        <p>All mob and room commands can substitue the name of the player or mob who triggered the action with the <code>{{ actor }}</code> syntax.</p>
+        <p>All mob and room commands can substitue the name of the player or mob who triggered the action with the <code><span v-pre>{{</span> actor <span v-pre>}}</span></code> syntax.</p>
 
-        <p>For example, if a mob has an entrance reaction of <code>say hello {{ actor }}</code> and the player who entered the room is named John, the mob will react by saying 'hello John'.</p>
+        <p>For example, if a mob has an entrance reaction of <code>say hello <span v-pre>{{</span> actor <span v-pre>}}</span></code> and the player who entered the room is named John, the mob will react by saying 'hello John'.</p>
 
         <div class="subtitle-1">Mob Commands</div>
         <p>Mobs can execute a subset of builder commands, as well as a <code>despawn</code> command that makes the mob delete itself.</p>
