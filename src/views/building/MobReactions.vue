@@ -22,6 +22,9 @@
         <div class="subtitle-1">Player connects</div>
         <p>React to a character entering the game in the mob's room.</p>
 
+        <div class="subtitle-1">Mob dies</div>
+        <p>React to the mob dying. In this case, the commands will be executed by the room, since the mob will be dead.</p>
+
         <div class="subtitle-1">Item is received</div>
         <p>React to a character giving an item to a mob. The option field should be the ID of the item’s template.</p>
       </template>
@@ -34,7 +37,7 @@ import Article from "@/components/Article.vue";
 
 export default {
   name: "MobReactions",
-  components: { Article }
+  components: { Article },
 };
 </script>
 

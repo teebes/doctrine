@@ -56,6 +56,11 @@ export default new Router({
       component: () => import("@/views/building/Index.vue"),
     },
     {
+      path: "/building/commands",
+      name: "building_commands",
+      component: () => import("@/views/building/Commands.vue"),
+    },
+    {
       path: "/building/conditions",
       name: "building_conditions",
       component: () => import("@/views/building/Conditions.vue"),

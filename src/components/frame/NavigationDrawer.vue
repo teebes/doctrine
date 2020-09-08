@@ -80,7 +80,7 @@
 export default {
   name: "NavigationDrawer",
   props: {
-    drawer: Boolean
+    drawer: Boolean,
   },
   data: () => ({
     // drawer: true,
@@ -88,67 +88,71 @@ export default {
     playing_links: [
       {
         label: "Formulas",
-        route: "/playing/formulas"
+        route: "/playing/formulas",
       },
       {
         label: "Classes",
-        route: "/playing/classes"
+        route: "/playing/classes",
       },
       {
         label: "Items",
-        route: "/playing/items"
+        route: "/playing/items",
       },
       {
         label: "Quests",
-        route: "/playing/quests"
+        route: "/playing/quests",
       },
       {
         label: "Experience",
-        route: "/playing/experience"
-      }
+        route: "/playing/experience",
+      },
     ],
     builder_links: [
       {
+        label: "Commands",
+        route: "/building/commands",
+      },
+      {
         label: "Items",
-        route: "/building/items"
+        route: "/building/items",
       },
       {
         label: "Mobs",
-        route: "/building/mobs"
+        route: "/building/mobs",
       },
       {
         label: "Mob Items",
-        route: "/building/mobs/items"
+        route: "/building/mobs/items",
       },
       {
         label: "Mob Reactions",
-        route: "/building/mobs/reactions"
+        route: "/building/mobs/reactions",
       },
       {
         label: "Doors",
-        route: "/building/doors"
+        route: "/building/doors",
       },
       {
         label: "Factions",
-        route: "/building/factions"
+        route: "/building/factions",
       },
       {
         label: "Room Checks",
-        route: "/building/roomchecks"
+        route: "/building/roomchecks",
       },
       {
         label: "Room Actions",
-        route: "/building/roomactions"
+        route: "/building/roomactions",
       },
       {
         label: "Quests",
-        route: "/building/quests"
+        route: "/building/quests",
       },
       {
         label: "Conditions",
-        route: "/building/conditions"
-      }
-    ]
+        route: "/building/conditions",
+      },
+    ],
   }),
   methods: {
     navTo(route) {
@@ -156,7 +160,7 @@ export default {
         return;
       }
       this.$router.push({ path: route });
-    }
-  }
+    },
+  },
 };
 </script>

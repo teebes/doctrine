@@ -19,7 +19,7 @@
 
         <p>When an item is imbued, it will be given a 'Item Power' percentage in the Stats Bonuses panel on the right-hand side of the item management screen. This indicator represents how strong this item's stat bonuses are compared to a randomly generated item of the same level.</p>
 
-        <p>Items that have an item power greater than 120% are referred to as 'imbued'. They receive a 20% bonus to armor and damage.</p>
+        <p>Items that have an item power greater than 120% are referred to as 'enchanted'. They receive a 20% bonus to armor and damage.</p>
 
         <p>Equippable items automatically grant armor, proportionally to the items's level, quality (normal &amp; imbued vs enchanted), and its armor class. Items of the 'heavy' armor class grant 4 times more armor than regular items, but can only be worn by warriors.</p>
 
