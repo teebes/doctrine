@@ -39,17 +39,17 @@
                 <td>item_in_room</td>
                 <td>template_id</td>
                 <td>
-                  Returns true if an item of the specified <code>template_id</code> is in the actor's room. <br>
-                  Example - Item from template ID 1 must be in the room: <code>item_in_room 1</code>
+                  Returns true if an item of the specified <code>template_id</code> is in the actor's room. Optionally, a second argument can require that a certain number of the items be in the room.<br>
+                  Example - Item from template ID 1 must be in the room: <code>item_in_room 1</code>. Two items of template ID 1: <code>item_in_room 1 2</code>.
                 </td>
               </tr>
 
               <tr>
                 <td>item_in_inv</td>
-                <td>template_id quantity</td>
+                <td>template_id</td>
                 <td>
-                  Returns true if <code>quantity</code> items of the specified <code>template_id</code> are in the actor's inventory. <br>
-                  Example - 2 items from template ID 1 must be in the actor's inventory: <code>item_in_inv 1 2</code>
+                  Returns true if an item of the specified <code>template_id</code> is in the actor's inventory. Optionally, a second argument can require that a certain number of the items be in the room.<br>
+                  Example - Item from template ID 1 must be in the actor's inventory: <code>item_in_inv 1</code>. Two items of template ID 1 in inventory: <code>item_in_inv 1 2</code>.
                 </td>
               </tr>
 
@@ -75,8 +75,8 @@
                 <td>mob_in_room</td>
                 <td>template_id</td>
                 <td>
-                  Return true if a mob of the specified <code>template_id</code> is in the actor's room. <br>
-                  Example - Mob from template ID 1 must be in the actor's room: <code>mob_in_room 1</code>
+                  Return true if a mob of the specified <code>template_id</code> is in the actor's room. Optionally, a second argument can require that a certain number of the mobs be in the room.<br>
+                  Example - Mob from template ID 1 must be in the actor's room: <code>mob_in_room 1</code>. 2 mobs from template ID 1: <code>mob_in_room 1 2</code>.
                 </td>
               </tr>
 
@@ -153,7 +153,7 @@ import Article from "@/components/Article.vue";
 
 export default {
   name: "",
-  components: { Article }
+  components: { Article },
 };
 </script>
 
