@@ -130,7 +130,15 @@
                 <td>
                   Return true if the actor has more gold than the specified amount. Example - Player must have 100 gold: <code>gold_above 99</code>
                 </td>
-              </tr>                            
+              </tr>
+
+              <tr>
+                <td>in_combat</td>
+                <td></td>
+                <td>
+                  Return true if the actor is in combat. Optionally, a second argument can require a specific target. Example - actor must be in combat: <code>in_combat</code>. Actor must be in combat versus a tiger: <code>in_combat tiger</code>.
+                </td>
+              </tr>  
             </tbody>
           </template>
         </v-simple-table>

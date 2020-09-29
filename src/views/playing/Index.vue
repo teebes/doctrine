@@ -33,10 +33,8 @@
         </p>
         <div class="subtitle-1">Single and Multi-player Worlds</div>
         <p>
-          Worlds can be either single player (by default) or multi-player
-          (unlocked through Patreon). The Unbroken World is multi-player, and
-          there you'll find the largest concentration of players on the
-          platform.
+          Worlds can be either single player or multi-player. Edeus is multi-player, and
+          there you'll find the largest concentration of players on the platform.
         </p>
       </template>
     </Article>
@@ -48,7 +46,7 @@ import Article from "@/components/Article.vue";
 
 export default {
   name: "Playing",
-  components: { Article }
+  components: { Article },
 };
 </script>
 
