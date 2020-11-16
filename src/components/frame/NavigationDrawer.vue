@@ -152,6 +152,10 @@ export default {
         label: "Conditions",
         route: "/building/conditions",
       },
+      {
+        label: "Facts",
+        route: "/building/facts",
+      },
     ],
   }),
   methods: {

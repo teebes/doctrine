@@ -71,6 +71,11 @@ export default new Router({
       component: () => import("@/views/building/Factions.vue"),
     },
     {
+      path: "/building/facts",
+      name: "building_facts",
+      component: () => import("@/views/building/Facts.vue"),
+    },
+    {
       path: "/building/roomchecks",
       name: "building_room_checks",
       component: () => import("@/views/building/RoomCheck.vue"),
