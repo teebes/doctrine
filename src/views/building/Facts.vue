@@ -3,7 +3,7 @@
     <Article>
       <template v-slot:title>FACTS</template>
       <template v-slot:content>
-        <p>Facts are key/value pairs that can be set by builders, mobs, and the Fact Schedule system. Facts can then be evaluated in <router-link to="/building/conditions">conditions</router-link> with the <code>fact_check</code> operator, thereby creation condition Room Actions, Loaders, Quests and Reactions.</p>
+        <p>Facts are key/value pairs that can be set by builders, mobs, and the Fact Schedule system. Facts can then be evaluated in <router-link to="/building/conditions">conditions</router-link> using the <code>fact_check</code> operator, thereby creating conditional Room Actions, Room Checks, Loaders, Quests and Reactions.</p>
 
         <p>Facts can be set by builders and mobs using the <code>setfact</code> and the <code>clearfact</code> commands, and by the system itself using with the Fact Scheduler. Below is a description for each field in a Fact Schedule entry:</p>
 
