@@ -173,6 +173,20 @@ say make yourself comfortable.
                     Example - lock north door: <code>/lock north</code>
                   </td>
                 </tr>
+                <tr>
+                  <td>award</td>
+                  <td>target, reward, qty</td>
+                  <td>
+                    Award a player with gold, medals, glory or faction standing. If awarding standing, the format for the reward is 'standing.faction_code'. Can pass negative values.<br/>
+                    Examples: <br>
+                      <code>award John gold 1</code><br/>
+                      <code>award John gold -5</code><br/>
+                      <code>award John glory 1</code><br/>
+                      <code>award John medals 2</code><br/>
+                      <code>award John standing.legion 10</code><br/>
+                      <code>award John experience 100</code>
+                  </td>
+                </tr>
             </tbody>
           </template>
         </v-simple-table>     

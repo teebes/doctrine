@@ -112,7 +112,7 @@
                 <td>faction_code standing</td>
                 <td>
                   Return true if the actor's standing within faction code <code>faction_code</code> is at least <code>standing</code>. <br>
-                  Example - Player must have 100 templar standing: <code>standing_above templar 100</code>
+                  Example - Player must have 100 templar standing: <code>standing_above templar 99</code>
                 </td>
               </tr>
 
@@ -139,6 +139,31 @@
                   Return true if the actor is in combat. Optionally, a second argument can require a specific target. Example - actor must be in combat: <code>in_combat</code>. Actor must be in combat versus a tiger: <code>in_combat tiger</code>.
                 </td>
               </tr>  
+
+              <tr>
+                <td>has_weapon</td>
+                <td></td>
+                <td>
+                  Return true if the actor has any weapon equipped. Example: <code>has_weapon</code>.
+                </td>
+              </tr>  
+
+              <tr>
+                <td>has_shield</td>
+                <td></td>
+                <td>
+                  Return true if the actor has a shield equipped. Example: <code>has_shield</code>.
+                </td>
+              </tr>  
+
+              <tr>
+                <td>wields_weapon_type</td>
+                <td>weapon_type</td>
+                <td>
+                  Return true if the actor is wielding a weapon of the designated weapon type. Example - actor must be wielding a dagger: <code>wields_weapon_type dagger</code>.
+                </td>
+              </tr>  
+
             </tbody>
           </template>
         </v-simple-table>
