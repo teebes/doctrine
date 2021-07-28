@@ -164,6 +164,14 @@
                 </td>
               </tr>  
 
+              <tr>
+                <td>gender</td>
+                <td>gender</td>
+                <td>
+                  Return true if the actor is of the designated gender. Example - actor must be male: <code>gender male</code>.
+                </td>
+              </tr>  
+
             </tbody>
           </template>
         </v-simple-table>
