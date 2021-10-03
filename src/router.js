@@ -86,6 +86,11 @@ export default new Router({
       component: () => import("@/views/building/RoomActions.vue"),
     },
     {
+      path: "/building/itemactions",
+      name: "building_item_actions",
+      component: () => import("@/views/building/ItemActions.vue"),
+    },    
+    {
       path: "/building/quests",
       name: "building_quests",
       component: () => import("@/views/building/Quests.vue"),

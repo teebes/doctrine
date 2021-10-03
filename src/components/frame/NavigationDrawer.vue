@@ -145,6 +145,10 @@ export default {
         route: "/building/roomactions",
       },
       {
+        label: "Item Actions",
+        route: "/building/itemactions",
+      },
+      {
         label: "Quests",
         route: "/building/quests",
       },
