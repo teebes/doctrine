@@ -109,6 +109,10 @@ export default {
     ],
     builder_links: [
       {
+        label: "Worlds",
+        route: "/building/worlds",
+      },
+      {
         label: "Commands",
         route: "/building/commands",
       },

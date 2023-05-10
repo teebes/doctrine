@@ -56,6 +56,11 @@ export default new Router({
       component: () => import("@/views/building/Index.vue"),
     },
     {
+      path: "/building/worlds",
+      name: "building_worlds",
+      component: () => import("@/views/building/Worlds.vue"),
+    },
+    {
       path: "/building/commands",
       name: "building_commands",
       component: () => import("@/views/building/Commands.vue"),

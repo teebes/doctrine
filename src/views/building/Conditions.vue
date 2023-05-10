@@ -172,6 +172,14 @@
                 </td>
               </tr>  
 
+              <tr>
+                <td>marked</td>
+                <td>mark value</td>
+                <td>
+                  Return true if the actor has a mark of the given value. Example - actor must have the 'beta' mark set to 'on': <code>marked beta on</code>.
+                </td>
+              </tr>  
+
             </tbody>
           </template>
         </v-simple-table>
