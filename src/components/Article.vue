@@ -32,7 +32,7 @@ export default {
   font-weight: bold;
   color: #999;
 }
-ul {
+ul, ol {
   margin-bottom: 16px;
 }
 
