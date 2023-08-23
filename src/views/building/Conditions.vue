@@ -69,10 +69,10 @@
                 </td>
               </tr>
               <tr>
-                <td>health_below</td>
+                <td>health</td>
                 <td>percentage</td>
                 <td>
-                  Return true if the actor's health is less than the specified percentage, compared to their max health. Example - Player must be below 50% health: <code>health_below 50</code>
+                  Return true if the actor's health is at least at the specified percentage, compared to their max health. Example - Player must be at 50% health: <code>health 50</code>
                 </td>
               </tr>
               <tr>
