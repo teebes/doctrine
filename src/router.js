@@ -99,7 +99,7 @@ export default new Router({
       path: "/building/itemactions",
       name: "building_item_actions",
       component: () => import("@/views/building/ItemActions.vue"),
-    },    
+    },
     {
       path: "/building/quests",
       name: "building_quests",
@@ -114,6 +114,11 @@ export default new Router({
       path: "/building/mobs/items",
       name: "building_mob_items",
       component: () => import("@/views/building/MobItems.vue"),
+    },
+    {
+      path: "/building/loading",
+      name: "building_loading",
+      component: () => import("@/views/building/Loading.vue"),
     },
     {
       path: "/building/mobs/reactions",

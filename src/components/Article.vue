@@ -39,7 +39,8 @@ ul, ol {
 code {
   background: #212121 !important;
   color: #c5c5c5 !important;
-  padding: 10px;
+  padding: 3px 5px;
+  margin: 0 5px;
   border: 1px solid #2b2b2b;
 }
 

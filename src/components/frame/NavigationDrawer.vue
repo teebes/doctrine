@@ -117,8 +117,28 @@ export default {
         route: "/building/commands",
       },
       {
+        label: "Conditions",
+        route: "/building/conditions",
+      },
+      {
+        label: "Doors",
+        route: "/building/doors",
+      },
+      {
+        label: "Factions",
+        route: "/building/factions",
+      },
+      {
+        label: "Facts",
+        route: "/building/facts",
+      },
+      {
         label: "Items",
         route: "/building/items",
+      },
+      {
+        label: "Loading",
+        route: "/building/loading",
       },
       {
         label: "Mobs",
@@ -133,20 +153,12 @@ export default {
         route: "/building/mobs/reactions",
       },
       {
-        label: "Doors",
-        route: "/building/doors",
-      },
-      {
-        label: "Factions",
-        route: "/building/factions",
+        label: "Room Actions",
+        route: "/building/roomactions",
       },
       {
         label: "Room Checks",
         route: "/building/roomchecks",
-      },
-      {
-        label: "Room Actions",
-        route: "/building/roomactions",
       },
       {
         label: "Item Actions",
@@ -155,14 +167,6 @@ export default {
       {
         label: "Quests",
         route: "/building/quests",
-      },
-      {
-        label: "Conditions",
-        route: "/building/conditions",
-      },
-      {
-        label: "Facts",
-        route: "/building/facts",
       },
     ],
   }),
