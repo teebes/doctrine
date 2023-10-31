@@ -35,7 +35,7 @@
 
         <div class="subtitle-1">Repopulate</div>
 
-        <p>Loaders called as part of the world's 15-second repopulation cycle will always respect the prescribed respawn wait times. But there may be situations where as a builder you may need to overwrite the wait times and repopulate a zone right away.</p>
+        <p>Loaders called as part of the world's 15-second repopulation cycle will always respect the prescribed respawn wait times. But there may be situations where as a builder you need to repopulate a zone right away, perhaps to test something.</p>
 
         <p>The <code>/repop</code> command lets you run all of the loaders for a zone whether or not their respawn time is up. Population counts will remain observed, and conditions evaluated.</p>
 

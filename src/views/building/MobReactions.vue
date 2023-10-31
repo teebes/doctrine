@@ -23,7 +23,7 @@
         <p>React to a character entering the game in the mob's room.</p>
 
         <div class="subtitle-1">Mob dies</div>
-        <p>React to the mob dying. In this case, the commands will be executed by the room, since the mob will be dead.</p>
+        <p>React to the mob dying. In this case, the commands will be executed by the room, since the mob will be dead. If using the <code>{{ actor }}</code> substitution, it will refer to the killer of the mob.</p>
 
         <div class="subtitle-1">Item is received</div>
         <p>React to a character giving an item to a mob. The option field should be the ID of the item’s template.</p>
