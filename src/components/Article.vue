@@ -19,6 +19,8 @@ export default {
 </script>
 
 <style lang='scss'>
+p, li, div { color: #ebebeb; }
+
 .title {
   margin: 32px 0;
   text-align: center;

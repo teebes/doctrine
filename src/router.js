@@ -24,6 +24,11 @@ export default new Router({
       component: () => import("@/views/playing/Index.vue"),
     },
     {
+      path: "/playing/conduct",
+      name: "formulas",
+      component: () => import("@/views/playing/Conduct.vue"),
+    },
+    {
       path: "/playing/formulas",
       name: "formulas",
       component: () => import("@/views/playing/Formulas.vue"),

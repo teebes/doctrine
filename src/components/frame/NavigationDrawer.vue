@@ -87,6 +87,10 @@ export default {
     isActive: false,
     playing_links: [
       {
+        label: "Conduct",
+        route: "/playing/conduct",
+      },
+      {
         label: "Formulas",
         route: "/playing/formulas",
       },
