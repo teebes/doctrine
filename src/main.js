@@ -6,7 +6,7 @@ import vuetify from "./plugins/vuetify";
 
 Vue.config.productionTip = false;
 
-const API_BASE = "https://api.writtenrealms.com/api/v1";
+const API_BASE = "https://writtenrealms.com/forge/api/v1";
 
 // Axios config
 import axios from "axios";

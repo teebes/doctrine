@@ -91,6 +91,10 @@ export default {
         route: "/playing/conduct",
       },
       {
+        label: "Communication",
+        route: "/playing/communication",
+      },
+      {
         label: "Formulas",
         route: "/playing/formulas",
       },
@@ -141,6 +145,10 @@ export default {
         route: "/building/items",
       },
       {
+        label: "Item Actions",
+        route: "/building/itemactions",
+      },
+      {
         label: "Loading",
         route: "/building/loading",
       },
@@ -157,20 +165,20 @@ export default {
         route: "/building/mobs/reactions",
       },
       {
+        label: "Moderation",
+        route: "/building/moderation",
+      },
+      {
+        label: "Quests",
+        route: "/building/quests",
+      },
+      {
         label: "Room Actions",
         route: "/building/roomactions",
       },
       {
         label: "Room Checks",
         route: "/building/roomchecks",
-      },
-      {
-        label: "Item Actions",
-        route: "/building/itemactions",
-      },
-      {
-        label: "Quests",
-        route: "/building/quests",
       },
     ],
   }),

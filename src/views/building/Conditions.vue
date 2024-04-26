@@ -83,6 +83,13 @@
                 </td>
               </tr>
               <tr>
+                <td>is_mob</td>
+                <td></td>
+                <td>
+                  Return true if the actor is a mob. Example: <code>is_mob</code>.
+                </td>
+              </tr>
+              <tr>
                 <td>item_in_eq</td>
                 <td>template_id</td>
                 <td>

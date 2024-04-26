@@ -6,7 +6,7 @@
         <p class="mt-12">
           Welcome to the documentation for Written Realms, a platform for
           <router-link to="/playing">playing</router-link>&nbsp;and
-          <router-link to="/building">building</router-link>&nbsp;text-based adventure games. Click on the section you would like to explore.
+          <router-link to="/building">building</router-link>&nbsp;text-based adventure games. What would you like to know more about?
         </p>
 
         <div class="d-flex mx-auto doc-sections">

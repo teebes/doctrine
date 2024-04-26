@@ -29,6 +29,11 @@ export default new Router({
       component: () => import("@/views/playing/Conduct.vue"),
     },
     {
+      path: "/playing/communication",
+      name: "communication",
+      component: () => import("@/views/playing/Communication.vue"),
+    },
+    {
       path: "/playing/formulas",
       name: "formulas",
       component: () => import("@/views/playing/Formulas.vue"),
@@ -129,6 +134,11 @@ export default new Router({
       path: "/building/mobs/reactions",
       name: "building_mob_reactions",
       component: () => import("@/views/building/MobReactions.vue"),
+    },
+    {
+      path: "/building/moderation",
+      name: "building_moderation",
+      component: () => import("@/views/building/Moderation.vue"),
     },
     {
       path: "/building/doors",
