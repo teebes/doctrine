@@ -3,13 +3,13 @@
     <Article>
       <template v-slot:title>FORMULAS</template>
       <template v-slot:content>
-        <p>A number of formulas depend on a variable called L, for 'Level Factor', which increases with levels. It is calculated as:</p>
+        <p>A number of formulas depend on a variable called L, for 'Level Factor', which increases with levels. For levels below 16, it is calculated as:</p>
 
         <p>
           <code>L = 5.5 * 1.1 ^ level</code>
         </p>
 
-        <p>The formula is adjusted to taper off above level 15 in order to reduce stratification and ensure that players can take part in higher-level content without necessarily being at the level cap.</p>
+        <p>Above level 15, the values are adjusted to taper off in order to reduce stratification and ensure that players can take part in higher-level content without necessarily being at the level cap.</p>
 
         <p>Here are the values of L above 15:</p>
 
