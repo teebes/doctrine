@@ -180,6 +180,10 @@ export default {
         label: "Room Checks",
         route: "/building/roomchecks",
       },
+      {
+        label: "Socials",
+        route: "/building/socials",
+      },
     ],
   }),
   methods: {

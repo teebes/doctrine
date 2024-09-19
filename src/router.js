@@ -150,6 +150,11 @@ export default new Router({
       name: "building_items",
       component: () => import("@/views/building/Items.vue"),
     },
+    {
+      path: "/building/socials",
+      name: "building_socials",
+      component: () => import("@/views/building/Socials.vue"),
+    },
     //FAQ
     {
       path: "/FAQ",
