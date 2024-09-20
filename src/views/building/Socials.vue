@@ -5,6 +5,8 @@
       <template v-slot:content>
         <p>Socials are a staple of Multi User Dungeons. They are templated emotes defined by the world's builders that players and mobs can use to socially interact with each other. Some examples might be  nod, shrug, wave, smile, laugh, sigh, shake, or slap. They can add a lot of personalized flavor to your world.</p>
 
+        <p>Mobs are able to use all of the same emotes that are available to player.</p>
+
         <div class="subtitle-1">Command</div>
 
         <p>When creating a social, the first thing to define is what the actual command is. For example for a social that makes a character smile, you would define a <code>smile</code> social. If you want them to laugh, you could define a <code>laugh</code> social. Defining a social adds a command to that world, and a player or mob executing that command will trigger the emote as defined by the social.</p>
@@ -47,6 +49,7 @@
 
         <ul class="mb-4">
           <li><code><span v-pre>{{</span> actor <span v-pre>}}</span></code> - the actor's name</li>
+          <li><code><span v-pre>{{</span> Actor <span v-pre>}}</span></code> - the actor's name with the first letter capitalized</li>
           <li><code><span v-pre>{{</span> actor_title <span v-pre>}}</span></code> - the actor's title</li>
           <li><code><span v-pre>{{</span> actor_marks.&lt;mark&gt; <span v-pre>}}</span></code> - any of the actor's marks (replace &lt;mark&gt; with the mark's name)</li>
           <li><code><span v-pre>{{</span> actor_subject_pronoun <span v-pre>}}</span></code> - he, she, they</li>
@@ -60,6 +63,7 @@
 
         <ul class="mb-4">
           <li><code><span v-pre>{{</span> target <span v-pre>}}</span></code> - the target's name</li>
+          <li><code><span v-pre>{{</span> Target <span v-pre>}}</span></code> - the target's name with the first letter capitalized.</li>
           <li><code><span v-pre>{{</span> target_title <span v-pre>}}</span></code> - the target's title</li>
           <li><code><span v-pre>{{</span> target_marks.&lt;mark&gt; <span v-pre>}}</span></code> - any of the target's marks (replace &lt;mark&gt; with the mark's name)</li>
           <li><code><span v-pre>{{</span> target_subject_pronoun <span v-pre>}}</span></code> - he, she, they</li>
@@ -71,30 +75,30 @@
 
         <div class="subtitle-1">Full Example</div>
 
-        <p>Here is a full example of a <code>shrug</code> social meant to describe someone shrugging.</p>
+        <p>Here is a full example of a <code>frown</code> social meant to describe someone frowning.</p>
 
         <ul class="mb-4">
-          <li>cmd: <code>shrug</code></li>
-          <li>Message (Standalone, Self): <code>You shrug.</code></li>
-          <li>Message (Standalone, Other): <code><span v-pre>{{</span> actor <span v-pre>}}</span> shrugs.</code></li>
-          <li>Message (Targeted, Self): <code>You shrug your shoulders at <span v-pre>{{</span> target <span v-pre>}}</span>.</code></li>
-          <li>Message (Targeted, Target): <code><span v-pre>{{</span> actor <span v-pre>}}</span> shrugs <span v-pre>{{</span> actor_possessive_adjective <span v-pre>}}</span> shoulders at you.</code></li>
-          <li>Message (Targeted, Other): <code><span v-pre>{{</span> actor <span v-pre>}}</span> shrugs <span v-pre>{{</span> actor_possessive_adjective <span v-pre>}}</span> shoulders at <span v-pre>{{</span> target <span v-pre>}}</span>.</code></li>
+          <li>cmd: <code>frown</code></li>
+          <li>Message (Standalone, Self): <code>What's wrong?</code></li>
+          <li>Message (Standalone, Other): <code><span v-pre>{{</span> Actor <span v-pre>}}</span> frowns.</code></li>
+          <li>Message (Targeted, Self): <code>You frown at <span v-pre>{{</span> target <span v-pre>}}</span>... trying to tell <span v-pre>{{</span> target_object_pronoun <span v-pre>}}</span> something?</code></li>
+          <li>Message (Targeted, Target): <code><span v-pre>{{</span> Actor <span v-pre>}}</span> frowns at you... is <span v-pre>{{</span> target_subject_pronoun <span v-pre>}}</span> trying to tell you something?</code></li>
+          <li>Message (Targeted, Other): <code><span v-pre>{{</span> Actor <span v-pre>}}</span> frowns at <span v-pre>{{</span> target <span v-pre>}}</span>... is <span v-pre>{{</span> actor_object_pronoun <span v-pre>}}</span> trying to tell <span v-pre>{{</span> target_object_pronoun <span v-pre>}}</span> something?</code></li>
         </ul>
 
-        <p>In the above setup, if John enters <code>shrug</code> with no arguments:</p>
+        <p>In the above setup, if John enters <code>frown</code> with no arguments:</p>
 
         <ul class="mb-4">
-          <li>John will see a message saying "You shrug."</li>
-          <li>Everyone else in the room will see a message saying "John shrugs."</li>
+          <li>John will see a message saying "What's wrong?"</li>
+          <li>Everyone else in the room will see a message saying "John frowns."</li>
         </ul>
 
-        <p>If John enters <code>shrug jack</code>:</p>
+        <p>If John enters <code>shrug mary</code>:</p>
 
         <ul class="mb-4">
-          <li>John will see a message saying "You shrug your shoulders at Jack."</li>
-          <li>Jack will see a message saying "John shrugs his shoulders at you."</li>
-          <li>Everyone else in the room will see a message saying "John shrugs his shoulders at Jack."</li>
+          <li>John will see a message saying "You frown at Mary... trying to tell her something?"</li>
+          <li>Jack will see a message saying "John frowns at you... is he trying to tell you something?"</li>
+          <li>Everyone else in the room will see a message saying "John frowns at Mary... is he trying to tell her something?"</li>
         </ul>
 
         <!-- <div class="subtitle-1">Priority</div>
