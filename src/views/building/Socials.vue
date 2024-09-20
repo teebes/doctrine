@@ -97,13 +97,13 @@
           <li>Everyone else in the room will see a message saying "John shrugs his shoulders at Jack."</li>
         </ul>
 
-        <div class="subtitle-1">Priority</div>
+        <!-- <div class="subtitle-1">Priority</div>
 
         <p>Assume you've defined two socials <code>smite</code> and <code>smile</code>. Written Realms always recognizes partial commands typed with fewer letters as long as the result i unambiguous. For example <code>smite</code> and <code>smit</code> will both resolve to the same <code>smite</code> command.</p>
 
         <p>But what if a player enters <code>smi</code>? Will that resolve to <code>smite</code> or <code>smile</code>? By default, it will be <code>smile</code> because it comes first alphabetically (l before t). If you want <code>smi</code> to resolve <code>smite</code> instead, you would assign priority 1 to <code>smite</code> and priority 2 to <code>smile</code>.</p>
 
-        <p>This is sort of a rare concern so most of the time you can just ignore the priority field.</p>
+        <p>This is sort of a rare concern so most of the time you can just ignore the priority field.</p> -->
 
       </template>
     </Article>
