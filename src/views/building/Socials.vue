@@ -82,7 +82,7 @@
           <li>Message (Standalone, Self): <code>What's wrong?</code></li>
           <li>Message (Standalone, Other): <code><span v-pre>{{</span> Actor <span v-pre>}}</span> frowns.</code></li>
           <li>Message (Targeted, Self): <code>You frown at <span v-pre>{{</span> target <span v-pre>}}</span>... trying to tell <span v-pre>{{</span> target_object_pronoun <span v-pre>}}</span> something?</code></li>
-          <li>Message (Targeted, Target): <code><span v-pre>{{</span> Actor <span v-pre>}}</span> frowns at you... is <span v-pre>{{</span> target_subject_pronoun <span v-pre>}}</span> trying to tell you something?</code></li>
+          <li>Message (Targeted, Target): <code><span v-pre>{{</span> Actor <span v-pre>}}</span> frowns at you... is <span v-pre>{{</span> actor_subject_pronoun <span v-pre>}}</span> trying to tell you something?</code></li>
           <li>Message (Targeted, Other): <code><span v-pre>{{</span> Actor <span v-pre>}}</span> frowns at <span v-pre>{{</span> target <span v-pre>}}</span>... is <span v-pre>{{</span> actor_object_pronoun <span v-pre>}}</span> trying to tell <span v-pre>{{</span> target_object_pronoun <span v-pre>}}</span> something?</code></li>
         </ul>
 
