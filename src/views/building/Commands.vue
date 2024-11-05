@@ -32,10 +32,10 @@ say make yourself comfortable.
         <p>The commands available to mobs are:</p>
 
         <ul>
+          <li>/damage</li>
           <li>/at</li>
           <li>/close</li>
           <li>/delay</li>
-          <li>/damage</li>
           <li>/echo</li>
           <li>/gecho</li>
           <li>/zecho</li>
@@ -50,14 +50,15 @@ say make yourself comfortable.
           <li>force</li>
           <li>jump</li>
           <li>load</li>
-          <li>mark</li>
           <li>regen</li>
           <li>send</li>
           <li>sendexcept</li>
           <li>setattr</li>
           <li>transfer</li>
+          <li>mark</li>
           <li>unmark</li>
-
+          <li>/incmark</li>
+          <li>/incfact</li>
         </ul>
 
         <p>For more information on any of these commands, try <code>help &lt;command name&gt;</code> in game.</p>
@@ -218,14 +219,6 @@ say make yourself comfortable.
                 </td>
               </tr>
               <tr>
-                <td>mark</td>
-                <td>player, name, value</td>
-                <td>
-                  Set a mark on a player to a given value.<br/>
-                  Example - set a quest completion marker on a player: <code>mark joe special_quest_complete true</code>
-                </td>
-              </tr>
-              <tr>
                 <td>pass</td>
                 <td></td>
                 <td>
@@ -273,11 +266,37 @@ say make yourself comfortable.
                 </td>
               </tr>
               <tr>
+                <td>mark</td>
+                <td>player, name, value</td>
+                <td>
+                  Set a mark on a player to a given value.<br/>
+                  Example - set a quest completion marker on a player: <code>mark joe special_quest_complete true</code>
+                </td>
+              </tr>
+              <tr>
                 <td>unmark</td>
                 <td>player, name</td>
                 <td>
                   Delete a mark on a player.<br/>
                   Example - delete a quest completion marker on a player: <code>unmark joe special_quest_complete</code>
+                </td>
+              </tr>
+              <tr>
+                <td>/incmark</td>
+                <td>target, mark, value</td>
+                <td>
+                  Increment the value of a mark by the specified amount. Negative values are allowed. Works for both integers and floats.<br/>
+                  Example - Increment the 'counter' mark on the player 'joe' by 5: <code>/incmark joe counter 5</code>
+                  Example - Decrement the 'counter' mark on the player 'joe' by 4.5: <code>/incmark joe counter -4.5</code>
+                </td>
+              </tr>
+              <tr>
+                <td>/incfact</td>
+                <td>target, fact, value</td>
+                <td>
+                  Increment the value of a fact by the specified amount. Negative values are allowed. Works for both integers and floats.<br/>
+                  Example - Increment the 'balance' fact by 1.5: <code>/incfact balance 1.5</code>
+                  Example - Decrement the 'balance' fact by 5: <code>/incfact balance -5</code>
                 </td>
               </tr>
             </tbody>
