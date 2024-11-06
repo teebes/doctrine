@@ -21,7 +21,7 @@
 
         <p>Items that have an item power greater than 120% are referred to as 'enchanted'. They receive a 20% bonus to armor and damage.</p>
 
-        <p>Equippable items automatically grant armor, proportionally to the items's level, quality (normal &amp; imbued vs enchanted), and its armor class. Items of the 'heavy' armor class grant 4 times more armor than regular items, but can only be worn by warriors.</p>
+        <p>Equippable items automatically grant armor, proportionally to the items's level, quality (normal &amp; imbued vs enchanted), and its armor class. Items of the 'heavy' armor class grant 4 times more armor than regular items, but can only be worn by warriors or classless players with the <code>proficiency_heavy_armor</code> mark.</p>
 
         <div class="subtitle-1">Item Loading</div>
 
@@ -43,6 +43,12 @@
 
         <p>When an item is loaded to the ground, picking it up will queue another item load to replace it, if the loader is set to respawn.</p>
 
+        <div class="subtitle-1">On Use</div>
+
+        <p>Items have an 'On Use' action triggered with the syntax <code>use &lt;item_name&gt;</code>. The item's on use commands as well as its description shown in item lookups is in the Advanced section of the Item Template screen in the world editor.</p>
+
+        <p>Note: <code>use</code> invokes a room command in the room where the item is.</p>
+
         <div class="subtitle-1">Random Items</div>
 
         <p>Creating equipment items can be a tedious and time-consuming task, especially if you are trying to establish a careful balance. To help with this, the world editor offers an option to automatically generate equipment.</p>
@@ -53,12 +59,33 @@
 
         <div class="subtitle-1">Item Upgrades</div>
 
-        <p>Items that are imbued or enchanted can be upgraded at workshops. Upgrades have a 50% chance to fail, in which case the item is destroyed. If the upgrade succeeds, the stats on the item will be boosted by 20%.</p>
+        <p>Items that are imbued or enchanted can be upgraded by upgrader mobs. Mobs can be set as upgraders in the Mob Template screen, for which you can tweak the cost multplier, success chance, success reactions and failure reactions.</p>
+
+        <p>When an upgrade fails, the item is destroyed and the cost is refunded. If the upgrade succeeds, the item's stats are boosted by 20%.</p>
 
         <p>Imbued items can be upgraded once and enchanted items can be upgraded up to 3 times.</p>
 
-        <!-- containers -->
-        <!-- quest items, boats, trash, etc -->
+        <div class="subtitle-1">Containers</div>
+
+        <p>Containers can hold up to 10 different items, and 30 copies of each item. They cannot hold other containers. </p>
+
+        <div class="subtitle-1">Boats</div>
+
+        <p>By selecting 'Allows to go on water' in the item template, characters can use this item to travel on water. Shallow water tiles don't require boats.</p>
+
+        <div class="subtitle-1">Trash</div>
+
+        <p>Trash are containers which deletes any items placed in them.</p>
+
+        <div class="subtitle-1">Augments</div>
+
+        <p>Augments are upgrade components that can be applied to imbued and enchanted items. They have stats which boosts the item's stats upon use. Augmenting an already augmented item will destroy the previous augment.</p>
+
+        <p>Augment stats can be set in the Stat Bonuses panel on the right-hand side of the item management screen.</p>
+
+        <div class="subtitle-1">Consumables or Food</div>
+
+        <p>Consumables or food are items that can be eaten or drank by characters to restore a certain amount of health, mana or stamina. They can be expended whilst in combat</p>
       </template>
     </Article>
   </div>
