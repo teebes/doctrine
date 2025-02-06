@@ -34,6 +34,13 @@
                 </td>
               </tr>
               <tr>
+                <td>currency</td>
+                <td>code amount</td>
+                <td>
+                  Returns true if the actor has at least the specified amount of the specified currency. Example - Player must have 100 platinum: <code>currency platinum 100</code>
+                </td>
+              </tr>
+              <tr>
                 <td>fact_check</td>
                 <td>fact value</td>
                 <td>
