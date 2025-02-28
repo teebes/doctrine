@@ -48,6 +48,13 @@
                 </td>
               </tr>
               <tr>
+                <td>fact_above</td>
+                <td>fact value</td>
+                <td>
+                  Return true if the the specified fact is above the given value.<br>
+                </td>
+              </tr>
+              <tr>
                 <td>gender</td>
                 <td>gender</td>
                 <td>
@@ -130,6 +137,18 @@
                 <td>
                   Return true if the actor has a mark of the given value. Example - actor must have the 'beta' mark set to 'on': <code>marked beta on</code>.
                 </td>
+              </tr>
+              <tr>
+                <td>mark_above</td>
+                <td>mark value</td>
+                <td>
+                  Return true if the actor has a mark above the given value. Example - actor must have an 'access_level' mark greater than 2: <code>mark_above access_level 2</code>.
+                </td>
+              </tr>
+              <tr>
+                <td>name</td>
+                <td>name</td>
+                <td>Return true if the actor has the given name. Example - actor must be called 'Joe': <code>name joe</code>.</td>
               </tr>
               <tr>
                 <td>medals</td>
