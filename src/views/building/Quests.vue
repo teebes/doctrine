@@ -74,6 +74,7 @@
           <li>medals: the player must pay medals</li>
           <li>currency: the player must pay a custom currency</li>
         </ol>A quest can have multiple objectives, for example a mob could want 3 oranges, 2 apple and 10 gold in exchange for a weapon.
+        
         <div class="subtitle-1">Rewards</div>
         <p>There are seven kinds of rewards:</p>
 
