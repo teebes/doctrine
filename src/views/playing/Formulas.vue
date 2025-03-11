@@ -127,7 +127,7 @@
               </tr>
               <tr>
                 <td>Glory</td>
-                <td>When you kill an enemy player, you receive 1/5th of their glory points, for a minimum of 1.</td>
+                <td>When you kill a player with an enemy core faction, you receive 1/5th of their glory points, for a minimum of 50 - whichever is greatest.</td>
               </tr>
             </tbody>
           </template>
