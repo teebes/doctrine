@@ -153,6 +153,10 @@ export default {
         route: "/building/loading",
       },
       {
+        label: "Marks",
+        route: "/building/marks",
+      },
+      {
         label: "Mobs",
         route: "/building/mobs",
       },
