@@ -22,7 +22,7 @@
         <p>Both of these commands will be executed by the game engine as close to each other as possible.</p>
 
         <div class="subtitle-1">Command Substitutions</div>
-        <p>All mob and room commands can substitue the name of the player or mob who triggered the action with the <code><span v-pre>{{</span> actor <span v-pre>}}</span></code> syntax.</p>
+        <p>All mob and room commands can substitute the name of the player or mob who triggered the action with the <code><span v-pre>{{</span> actor <span v-pre>}}</span></code> syntax.</p>
 
         <p>For example, if a mob has an entrance reaction of <code>say hello <span v-pre>{{</span> actor <span v-pre>}}</span></code> and the player who entered the room is named John, the mob will react by saying 'hello John'.</p>
 
@@ -255,7 +255,7 @@
                   Restore health, mana & stamina to 100%. If a target is specified, will regen that target's resources. If a resource is specified, will only regen that resource.<br/>
                   Example - regen all resources for the caster: <code>/regen</code>
                   Example - regen all resources for player john: <code>/regen john</code>
-                  Exampe - regen 'soldier' mob's health: <code>/regen soldier health</code>
+                  Example - regen 'soldier' mob's health: <code>/regen soldier health</code>
                 </td>
               </tr>
               <tr>
@@ -328,7 +328,7 @@
                 <td>message</td>
                 <td>
                   Send a string of text to all players in the room's zone. <br>
-                  Example - send 'The church bells ring.' to everyone in the room's one: <code>/zecho The church bells ring.</code>
+                  Example - send 'The church bells ring.' to everyone in the room's zone: <code>/zecho The church bells ring.</code>
                 </td>
               </tr>
               <tr>
