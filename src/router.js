@@ -160,6 +160,11 @@ export default new Router({
       name: "building_marks",
       component: () => import("@/views/building/Marks.vue"),
     },
+    {
+      path: "/building/keywords",
+      name: "building_keywords",
+      component: () => import("@/views/building/Keywords.vue"),
+    },
     //FAQ
     {
       path: "/FAQ",
