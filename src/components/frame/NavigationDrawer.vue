@@ -148,6 +148,10 @@ export default {
         label: "Item Actions",
         route: "/building/itemactions",
       },
+       {
+        label: "Keywords",
+        route: "/building/keywords",
+      },
       {
         label: "Loading",
         route: "/building/loading",
