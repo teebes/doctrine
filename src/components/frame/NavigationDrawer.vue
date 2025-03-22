@@ -141,6 +141,10 @@ export default {
         route: "/building/facts",
       },
       {
+        label: "Incrementation",
+        route: "/building/incrementation",
+      },
+      {
         label: "Items",
         route: "/building/items",
       },

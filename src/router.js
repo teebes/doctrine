@@ -165,6 +165,11 @@ export default new Router({
       name: "building_keywords",
       component: () => import("@/views/building/Keywords.vue"),
     },
+    {
+      path: "/building/incrementation",
+      name: "building_incrementation",
+      component: () => import("@/views/building/Incrementation.vue"),
+    },
     //FAQ
     {
       path: "/FAQ",
