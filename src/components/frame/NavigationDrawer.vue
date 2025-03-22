@@ -185,6 +185,10 @@ export default {
         route: "/building/quests",
       },
       {
+        label: "Randomization",
+        route: "/building/randomization",
+      },
+      {
         label: "Room Actions",
         route: "/building/roomactions",
       },
