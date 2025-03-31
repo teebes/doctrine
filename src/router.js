@@ -170,6 +170,11 @@ export default new Router({
       name: "building_incrementation",
       component: () => import("@/views/building/Incrementation.vue"),
     },
+    {
+      path: "/building/randomization",
+      name: "building_randomization",
+      component: () => import("@/views/building/Randomization.vue"),
+    },
     //FAQ
     {
       path: "/FAQ",
