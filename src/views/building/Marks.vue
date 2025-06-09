@@ -9,7 +9,7 @@
 
         <p>For example, let's say a player has flicked some light switches on via a room action. A sensible mark to show the player has turned the lights on, would be something like <code>lights_turned_on true</code>.</p>
 
-        <p>Another example could be a player unlocks a treasure chest through an item action. Upon opening the chest, we could mark the actor <code>/mark {{actor}} treasure_chest opened</code>.</p>
+        <p>Another example could be a player unlocks a treasure chest through an item action. Upon opening the chest, we could mark the actor <code>/mark <span v-pre>{{</span> actor <span v-pre>}}</span></code> treasure_chest opened</code>.</p>
 
         <div class="subtitle-1">Marked Condition</div>
 
@@ -22,13 +22,13 @@
         <div class="subtitle-2">Full example of one-time only treasure chest</div>
         <p>action name: First chest opening</p>
         <p>action: Open Treasure Chest</p>
-        <p>cmds: /award {{ actor }} gold 100 ; /mark {{ actor }} treasure_chest opened</p>
+        <p>cmds: /award <span v-pre>{{</span> actor <span v-pre>}}</span></code> gold 100 ; /mark <span v-pre>{{</span> actor <span v-pre>}}</span></code> treasure_chest opened</p>
         <p>option: 10</p>
         <p>conditions: player_in_room and not marked treasure_chest opened</p>
 
         <p>action name: Chest already opened</p>
         <p>action: Open Treasure Chest</p>
-        <p>cmds: /send {{ actor }} You have already opened this chest!</p>
+        <p>cmds: /send <span v-pre>{{</span> actor <span v-pre>}}</span></code> You have already opened this chest!</p>
         <p>option: 1</p>
         <p>conditions: player_in_room and marked treasure_chest opened</p>
 
