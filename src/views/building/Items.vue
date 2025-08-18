@@ -88,6 +88,16 @@
 
         <p>When an item is loaded on the ground, picking it up will queue another item load to replace it, if the loader is set to respawn.</p>
 
+        <div class="subtitle-1">Item On-Use Commands</div>
+
+        <p>Items can be assigned an On-Use Command and Description, triggering events local to each item template and is activated with the <code>use</code> command, followed by one of its target keywords (i.e to activating 'an infared sensor', the player would command <code>use sensor</code> or <code>use infared</code>).</p>
+          
+        <p>On-Use Commands may execute multiple different tasks, separated by the semicolon.</p>
+
+        <p>In the case of an equipment's special usage (i.. a sword with activated laser beams), On-Use Commands can be set to trigger exclusively when equipped.</p>
+          
+        <p>On-Use Descriptions add an orange highlight to the item's description by the format "On Use: ...".</p>
+
         <div class="subtitle-1">Random Items</div>
 
         <p>Creating equipment items can be a tedious and time-consuming task, especially if you are trying to establish a careful balance. To help with this, the world editor offers an option to automatically generate equipment.</p>
