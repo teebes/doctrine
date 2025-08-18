@@ -92,9 +92,10 @@
                 <td>/award</td>
                 <td>target, reward, qty</td>
                 <td>
-                  Award a player with gold, medals, glory or faction standing. If awarding standing, the format for the reward is 'standing.faction_code'. Can pass negative values.<br/>
+                  Award a player with gold, medals, glory, experience or faction standing. If awarding standing, the format for the reward is 'standing.faction_code'. Can pass negative values.<br/>
                   Example - <code>/award John gold 10</code><br/>
                   Example - <code>/award John medals -1</code><br/>
+                  Example - <code>/award John experience 500</code><br/>
                   Example - <code>/award John standing.legion 100</code>
                 </td>
               </tr>
